@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTE PRIX</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    </audio>
+
+</head>
+
+<body>
+
+
+    <h1>Le Juste Prix</h1>
+    <img src="./philouleroidumicro.gif" alt="philou" title="MAIS QUEL CLASSE LE PHILOU! ">
+    <p>Tu peux pas test</p>
+
+    <script>
+        //Le Juste prix : L'exercice consiste de choisir entre un chiffre de 1 à 100 
+
+        //Nom du candidat
+        const playerName = prompt("Entrez votre nom pour battre Phillipe Risolli :");
+        // Const et la commande qu'on créer. Ensuite, on choisit le prompt pour faire une boite de dialogue
+        // Le Chiffre
+        const rightPrice = Math.floor(Math.random() * 100) + 1;
+        while (true) {
+            // Math.floor et Math.random Pour taper le chiffre .
+
+            //réponse 
+
+            // Bravo tu as gagné 
+            const playerNumber = prompt("Entrez votre nombre entre 1 et 100 et tentez de piéger Phillipe Rosolli  :");
+            if (parseInt(playerNumber) === rightPrice) {
+                alert(`${playerName} Bravo vous avez gagné, Phillipe Risolli a pris sa retraite`);
+                break;
+            }
+            // C'est plus ou c'est moins 
+            if (parseInt(playerNumber) > rightPrice) {
+                alert("C'est moins!");
+            } else {
+                alert("C'est plus!")
+            }
+        }
+    </script>
+
+</body>
+<footer>
+    <img src="./lycos.jpg" alt="lycos" width="100" height="100">
+
+    <audio controls autoplay>
+        <source src="./theme.mp3" type="audio/mpeg">
+</footer>
+
+</html>
